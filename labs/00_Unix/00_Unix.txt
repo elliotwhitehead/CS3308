@@ -1,0 +1,90 @@
+# Elliot Whitehead
+# Karl _______
+# Wed Aug 30 2017
+# Elliot.Whitehead@Colorado.edu
+
+# PART 1
+
+date
+date prints a unix datetime stamp.
+
+ls -ltr
+ls -ltr prints a long listing of the files in a directory, sorted oldest to newest.
+
+cd ..
+cd .. changes the present working directory to the parent directory.
+
+pwd
+pwd prints the current working directory
+
+who
+who prints all currently logged in users
+
+whoami
+whoami prints the current 'effective' user id, and also helps in moments of self-identity crisis
+
+man man
+man man opens the manual page for the unix manual! HORRAY.
+
+env
+env is used for displaying and modifiying current environment variables
+
+# PART 2
+
+GOAL: Make a directory named cs3308 and move into that directory.
+COMMAND: mkdir cs3308 && cd cs3308;
+
+GOAL: Rename your directory cs3308 to csci3308. Change to the root directory.
+COMMAND: mv path/to/directory/cs3308 path/to/directory/csci3308 && cd ~;
+
+GOAL: Make a copy of a file.
+COMMAND: cp file.txt filecopy.txt;
+
+GOAL: Delete the copy of your file
+COMMAND: rm filecopy.txt;
+
+GOAL: Make a directory named tmp. Then delete that directory. View the contents of a file.
+COMMAND: mkdir tmp && rmdir tmp && cat file.txt
+
+GOAL: 2nd way to view the contents of a file.
+COMMAND: more file.txt
+
+GOAL: View just the beginning of a file.
+COMMAND: head somefile.txt
+
+GOAL: View just the end of a file.
+COMMAND: tail somefile.txt
+
+GOAL: List all files that contain the word the in the file.
+COMMAND: grep -r the .
+
+GOAL: List full path to all files named books.txt.
+COMMAND: find "($pwd)" -name books.txt
+
+GOAL: Zip the contents in your directory into a file named dir.zip Unzip your zipped file dir.zip into a new directory named tmp Tar the contents in your directory into a file named dir.tar Untar your zipped file dir.tar into a new directory named tmp2
+COMMANDS: 
+1) zip -r dir 00_Unix/
+2) unzip dir -d tmp
+3) tar -cf dir.tar tmp/
+4)mkdir tmp2 && tar -xf dir.tar -C tmp2/
+
+GOAL: Modify a file’s last modified timestamp to now. This also creates a new file if it doesn’t currently exist.
+COMMAND: touch file.exe
+
+# PART 3
+
+GOAL: Sort the file based on the username (first field).
+COMMAND: sort passwd_demo.txt
+
+GOAL: Sort the file based on the UID. Since it's a bumber, be sure to specify that it is a number so it sorts the numbers correctly.
+COMMAND: sort -k 3 -t ':' -n
+
+GOAL: Sort first based on GID, then UID.
+COMMAND: sort -k 4,4 -n -k 3,3 -n -t ':'
+
+GOAL: Show all the lines in the files with the word 'Marx' in it.
+COMMAND: cat passwd_demo.txt | grep Marx
+
+GOAL: Get the number of lines in the file (from a Unix command)
+COMMAND: wc -l passwd_demo.txt
+
