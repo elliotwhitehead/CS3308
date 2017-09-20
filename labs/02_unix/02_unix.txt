@@ -1,0 +1,44 @@
+# Step 2: - Use the diff command
+Which "fruits" have been added to or removed from fruitsOld.txt to get to fruitsNew.txt?
+Cranberry was removed from the oldFruits.txt file 
+Jackfruit was added to fruitsNew.txt
+Nectarine and Prickly Pear weres removed from fruitsOld.txt
+
+
+# Step 3: - Use the wc command
+Find the # of lines in the testPasswd.txt file.
+wc -l testPasswd.txt
+
+Find the # of characters in the testPasswd.txt
+wc -m testPasswd.txt
+
+
+# Step 4: - Use the cut command
+Print a list of the usernames from the testPasswd.txt files (print the first columns only)
+cut -f 1 -d ':' testPasswd.tx
+
+Print out only the LN column and HW1 grade column from the grades.txt file.
+cut -f 2 -f 4 -d ' ' grades.txt
+
+
+# Step 5: - Practice using pipes
+Use cut, sort, and uniq to print the groups that users are in within the testPasswd.testPasswd.txt file. (Each group is a #. When printing each group should get a line and there should be no duplicates printed)
+cut -f 4 -d ':' testPasswd.txt | sort -n | uniq
+
+Pipe the output of the above into a file in your home directory
+cut -f 4 -d ':' testPasswd.txt | sort -n | uniq > ~/output.txt
+
+Use grep and cut to filter the testPasswd.txt file to only display usernames that start with 'm' 'w' or 's' and their home directories (sixth column)
+cut -f 1,6 -d ':' testPasswd.txt | grep '^[mws]'
+
+# Step 6: - Use the sed command
+Using sed and regular expressions try playin garound with the leetSpeak.txt file.
+ 	-Remove all the letters
+		sed 's/[a-z]//g' leetSpeak.txt
+	-Remove all the numbers
+		sed 's/[0-9]//g' leetSpeak.txt
+	-Replace all the numbers with an '_'
+		sed 's/[0-9]/_/g' leetSpeak.txt
+Create a script that pipees together multiple sed commands to replace each number with its matching character. (This can be done without piping, how? For this problem please use pipes)
+
+Create a script that pipes together multiple sed commands to replace each number with its matching character
