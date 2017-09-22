@@ -1,5 +1,4 @@
 #! /bin/bash
-while read a; do
-	echo $a
-done < Reports.txt
-
+while read ID FIRST LAST SCORE1 SCORE2 SCORE3; do
+	echo (
+done < $1
