@@ -11,4 +11,4 @@ awk '{
 		printf $3;
 		printf ", ";
 		print $2;
-}' $1 | sort -k 3 -k 2
+}' $1 | sort -k 3 -k 2 -k 2
