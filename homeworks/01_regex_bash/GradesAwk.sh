@@ -3,6 +3,9 @@
 if [[ $# -eq 0 ]] ; then
 	echo 'Usage: GradesAwk.sh filename'
 	exit 0
+elif [[ $# -gt 1 ]]; then
+	echo 'Usage: GradesAwk.sh filename'
+	exit 0
 fi
 
 awk '{

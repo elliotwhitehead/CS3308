@@ -3,6 +3,9 @@
 if [[ $# -eq 0 ]] ; then
 	echo 'Usage: Grades.sh filename'
 	exit 0
+elif [[ $# -gt 1 ]]; then
+	echo 'Usage: Grades.sh filename'
+	exit 0
 fi
 
 while read ID FIRST LAST SCORE1 SCORE2 SCORE3; do
