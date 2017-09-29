@@ -1,7 +1,21 @@
 /* the css rules for boxes.html */
 
+body{
+	margin: 0;
+}
+
 div {
     border: 2px solid black;
     height: 100px;
     width: 100px;
+    float: left;
+}
+
+#div1{
+	background: red;
+	float: left;
+}
+
+#div1 p{
+	background: yellow;
 }
