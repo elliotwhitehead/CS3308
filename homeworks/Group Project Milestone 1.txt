@@ -3,4 +3,4 @@ Members: Megan Byers, Lucas Reed, Lindsay Walton, Elliot Whitehead
 
 *Please note, this information was submitted via email on Saturday as there was not an open submission form for Milestone 1 at that time.
 
-Our group project Milestone 1 informaion can be found in the README file of our project repo, at https://github.com/elliotwhitehead/SummitPlan. 
+Our group project Milestone 1 information can be found in the README file of our project repo, at https://github.com/elliotwhitehead/SummitPlan. 
