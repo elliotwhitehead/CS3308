@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+
+<body>
+
+<form method="get"  
+	action="mailto:alanparadise@gmail.com"
+      enctype="text/plain"
+      onsubmit="window.alert('Form is being mailed')">
+	  
+	<h2>Name:</h2>
+	
+	<input type="text" name="Name" size="20" maxlength="30" />
+	<br><hr>
+	
+	<h2>Please Specify Gender:</h2>
+	<input type="radio" name="Gender" value="M" /> Male
+	<input type="radio" name="Gender" value="F" /> Female
+	<input type="radio" name="Gender" value="O" /> Other
+	<br><hr>
+	
+	<h2>Please Select One or More Sizes:</h2>
+	<input type="checkbox" name="size" value="S" checked="checked" />Small 
+	<input type="checkbox" name="size" value="M" />Medium
+	<input type="checkbox" name="size" value="L" />Large
+	<input type="checkbox" name="size" value="XL" />X-Large
+	<br><hr>
+	
+	<h2>Please Select Your Grade</h2>
+	<select name="Grade" size="5" multiple="yes" />
+		<option />A	
+		<option />B
+		<option />C
+		<option />D
+		<option selected="yes" />F
+	</select>
+	<br><hr><br>
+	
+	Comments:<br>
+	<textarea name="comments" cols="40" rows="4"></textarea>
+	<br><hr><br>
+		
+	<input type="submit" value="Send Form" />
+	<input type="reset" />
+	
+</form>	
+	
+</body>
+
+</html>

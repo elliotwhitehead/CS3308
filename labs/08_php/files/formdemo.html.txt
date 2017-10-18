@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+	 
+<form enctype="multipart/form-data"
+	  action="http://localhost/handleform.php"> 	
+	  
+	<h2>Name:</h2>
+	
+	<input type="text" name="Name" size="20" maxlength="30" />
+	<br><hr>
+	
+	<h2>Please Specify Gender:</h2>
+	<input type="radio" name="Gender" value="M" /> Male
+	<input type="radio" name="Gender" value="F" /> Female
+	<br><hr>
+	
+	<h2>Please Select One or More Sizes:</h2>
+	<input type="checkbox" name="Size" value="S" checked="checked" />Small 
+	<input type="checkbox" name="Size" value="M" />Medium
+	<input type="checkbox" name="Size" value="L" />Large
+	<input type="checkbox" name="Size" value="XL" />X-Large
+	<br><hr>
+	
+	<h2>Please Select Your Grade</h2>
+	<select name="Grade" size="5" multiple="yes" />
+		<option />A	
+		<option />B
+		<option />C
+		<option />D
+		
+		<option selected="yes" />F
+	</select>
+	<br><hr><br>
+	
+	Comments:<br>
+	<textarea name="Comments" cols="40" rows="4"></textarea>
+	<br><hr><br>
+		
+	<input type="submit" value="Send Form" />
+	<input type="reset" />
+	
+</form>	
+
+</body>
+</html>

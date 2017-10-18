@@ -1,0 +1,33 @@
+<html>
+  <! -- Lab # 0 – HTML Refresher
+<head>
+    <title>Basic Demo</title>
+</head>
+
+<body> 
+<! -- <body bgcolor= "pink" text= "blue ">  
+  	This text is the body of the web page.<br><br>
+	
+	This text is <em><b> above </em></b> the rule.<br>
+	<hr>
+	This text is <em><b> below </em></b> the rule.<br> 
+	
+	<h1> A level One Heading</h1>
+	<h2> A level Two Heading</h2>
+	<h3> A level Three Heading</h3>
+	
+	<img src="logo.png">  
+	
+	<p>As one of 34 U.S. public research institutions belonging to the prestigious Association of American 
+	Universities (AAU)and the only member in the Rocky Mountain region our goal at CU Boulder is to 
+	directly affect Colorado communities through collaborative research, innovation and entrepreneurship. 
+	Our faculty, staff and students work with the broader community to establish unique connections 
+	that have lasting outcomes both across Colorado and around the world.</p>
+	
+	<a href="http://www.colorado.edu">CU Boulder</a> <br><br>
+	<a href="http://www.colorado.edu"><img src="logo.png"></a>
+
+</body>
+
+</html>
+
