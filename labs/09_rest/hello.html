@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Hello</title>
+	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+	<script>
+		$(document).ready(function() {
+			var url = 'https://api.forecast.io/forecast/7eca58979c247b83761dc2d4c49d8989/40.014984,-105.270546';
+			$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
+				console.log(data);
+				$('#results').text(data.currently.temperature);
+				$('#summary').text(data.currently.summary);
+				$('#humidity').text((data.currently.humidity)*100);
+			});
+		});
+	</script>
+</head>
+<body style="text-align: center;">
+	<h1>Boulder Weather</h1>
+	<h3>Currently</h3>
+	<p><span id="results"></span>&deg; F</p>
+	<p id="summary"></p>
+	<p><span id="humidity"></span>% Humidity</p>
+</body>
+</html>
